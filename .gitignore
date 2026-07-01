@@ -1,0 +1,10 @@
+# === JAVA & COMPILADOS ===
+out/
+*.class
+
+# === IDE (INTELLIJ IDEA) ===
+.idea/
+*.iml
+
+# === ARQUIVOS DE SISTEMA ===
+.DS_Store
