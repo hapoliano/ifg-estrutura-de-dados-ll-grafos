@@ -21,7 +21,40 @@ O programa é executado via terminal e oferece um menu interativo com as seguint
 
 ---
 
-## 2. Modelagem do Grafo
+## 2. Como Executar
+
+### Pré-requisitos
+
+- **JDK 17** ou superior instalado (`javac -version` para conferir).
+
+### Compilar
+
+Na raiz do projeto, onde estão os arquivos `.java`:
+
+```bash
+javac *.java -d out
+```
+
+### Executar
+
+```bash
+java -cp out Main
+```
+
+O programa abrirá um menu interativo no terminal:
+
+```
+=== Sistema de Rotas Aéreas ===
+1. Cadastrar cidade
+2. Cadastrar rota
+3. Listar cidades
+4. Listar rotas
+5. Verificar rota (Busca em Largura)
+6. Verificar rota (Busca em Profundidade)
+0. Sair
+```
+
+## 3. Modelagem do Grafo
 
 O grafo foi modelado como um **grafo não direcionado**, pois uma rota aérea entre duas cidades permite viagens nos dois sentidos.
 
@@ -41,7 +74,7 @@ Quando uma rota A ↔ B é adicionada, ela é registrada nos dois sentidos:
 
 ---
 
-## 3. Classes Implementadas
+## 4. Classes Implementadas
 
 ### Cidade
 Representa um vértice do grafo — uma cidade atendida pela companhia aérea.
@@ -73,7 +106,7 @@ Classe principal que armazena os vértices e arestas e implementa os algoritmos 
 
 ---
 
-## 4. Algoritmos de Busca
+## 5. Algoritmos de Busca
 
 ### Busca em Largura
 
@@ -114,7 +147,7 @@ Ambos os algoritmos utilizam um conjunto `visitados` para evitar visitar a mesma
 
 ---
 
-## 5. Exemplo de Execução
+## 6. Exemplo de Execução
 
 ### Cidades e rotas cadastradas
 
